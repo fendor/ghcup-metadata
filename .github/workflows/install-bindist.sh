@@ -84,7 +84,7 @@ case $TOOL in
 				bin_noexe=${bin/.exe/}
 				if ! [[ "${bin_noexe}" =~ "haskell-language-server-wrapper" ]] && ! [[ "${bin_noexe}" =~ "~" ]] && ! [[ "${bin_noexe}" =~ ".shim" ]] ; then
 					if ghcup_fun install ghc --set "${bin_noexe/haskell-language-server-/}" ; then
-						"${hls}" typecheck "${test_module}" || fail "failed to typecheck with HLS for GHC ${bin_noexe/haskell-language-server-/}"
+						HLS_WRAPPER_DEBUG=1 "${hls}" typecheck "${test_module}" || fail "failed to typecheck with HLS for GHC ${bin_noexe/haskell-language-server-/}"
 					else
 						fail "GHCup failed to install GHC ${bin_noexe/haskell-language-server-/}"
 					fi
@@ -92,7 +92,7 @@ case $TOOL in
 				fi
 			done
 			ghcup_fun install ghc --set recommended
-			"$bindir/haskell-language-server-wrapper${ext}" typecheck "${test_module}" || fail "failed to typecheck with HLS wrapper"
+			HLS_WRAPPER_DEBUG=1 "$bindir/haskell-language-server-wrapper${ext}" typecheck "${test_module}" || fail "failed to typecheck with HLS wrapper"
 		}
 
         enter_test_package
