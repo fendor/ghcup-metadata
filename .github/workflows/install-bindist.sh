@@ -13,6 +13,7 @@ source "$GHCUP_INSTALL_BASE_PREFIX"/.ghcup/env || source "$HOME/.bashrc"
 ghcup --version
 which ghcup | grep foobarbaz
 
+
 ghcup_fun() {
 	case "$(uname -s)" in
 		MSYS_*|MINGW*)
@@ -79,6 +80,7 @@ case $TOOL in
 			local hls
 			bindir=$1
 
+			cabal --numeric-version
 			for hls in "${bindir}/"haskell-language-server-* ; do
 				bin=${hls##*/}
 				bin_noexe=${bin/.exe/}
