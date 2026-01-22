@@ -8958,7 +8958,7 @@ ghcupDownloads:
             unknown_versioning:
               dlUri: https://downloads.haskell.org/~hls/haskell-language-server-2.13.0.0/haskell-language-server-2.13.0.0-x86_64-apple-darwin.tar.xz
               dlSubdir: haskell-language-server-2.13.0.0
-              dlHash: e2910f8dcecd6f978a4631d2c3a4c0beb8ad7d4b465e23c21c539e7d16fc3fd6
+              dlHash: a7e91bba23a841d7137acaba11b3e093c88b7fd1f03b5e1a6fd9662ac937fd87
           Windows:
             unknown_versioning:
               dlUri: https://downloads.haskell.org/~hls/haskell-language-server-2.13.0.0/haskell-language-server-2.13.0.0-x86_64-mingw64.zip
