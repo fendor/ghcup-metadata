@@ -7473,7 +7473,6 @@ ghcupDownloads:
                 dlHash: a387fd8245c5a0bb5e230652be2add14a26335b4d68e03e9e8002d3fd85dd034
       3.16.1.0:
         viTags:
-        - Latest
         - Recommended
         viChangeLog: https://github.com/haskell/cabal/blob/master/release-notes/cabal-install-3.16.1.0.md
         viArch:
@@ -7538,6 +7537,72 @@ ghcupDownloads:
               unknown_versioning:
                 dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.16.1.0/cabal-install-3.16.1.0-aarch64-apple-darwin.tar.xz
                 dlHash: d375f02bf21ad001a7ee346fffdf190010c20938a30b5d9c1285006a15fb9b70
+      3.18.1.0:
+        viTags:
+        - Latest
+        viChangeLog: https://github.com/haskell/cabal/blob/master/release-notes/cabal-install-3.18.1.0.md
+        viArch:
+          A_64:
+            Linux_Debian:
+              unknown_versioning: &cabal-31810-64-glibc
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-x86_64-linux-glibc.tar.xz
+                dlHash: bbc0ce17dea6600d44293be8f74e14ddca833a24a4bcbf56f8bd11962c09ff4c
+            Linux_Ubuntu:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_Mint:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_Fedora:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_Rocky:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_CentOS:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_RedHat:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_AmazonLinux:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_OpenSUSE:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_UnknownLinux:
+              unknown_versioning: *cabal-31810-64-glibc
+            Linux_Alpine:
+              unknown_versioning: &cabal-31810-64-musl-static
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-x86_64-linux-musl-static.tar.xz
+                dlHash: 17bc7b468c2ece289d35accbbcbf47d3ac49f2c506a19be24ab4e3968add4950
+            Linux_Void:
+              unknown_versioning: *cabal-31810-64-musl-static
+            Darwin:
+              unknown_versioning:
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-x86_64-apple-darwin.tar.xz
+                dlHash: e7074f0f0efea43ce278412e36c8c54f9ecfa85cf37dfe00fd0544be69c8bb31
+            Windows:
+              unknown_versioning:
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-x86_64-mingw64.zip
+                dlHash: 0f14ff18ab51b89a8098cba18fba39abb8e734c3c1275bfa56e272f6022fc642
+            FreeBSD:
+              unknown_versioning:
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-x86_64-portbld-freebsd.tar.xz
+                dlHash: 496cd5ad3807272c48254e744f1aaaa18171c8365439793194ead51b93ac2b52
+          A_32:
+            Linux_UnknownLinux:
+              unknown_versioning: &cabal-31810-32-unknown
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-i386-linux-unknown.tar.xz
+                dlHash: 7c42b26af5cd7ce414ca4a31dc9e0abac1c8fb4c50a30b09217a35325d63d168
+            Linux_Alpine:
+              unknown_versioning: *cabal-31810-32-unknown
+          A_ARM64:
+            Linux_UnknownLinux:
+              unknown_versioning:
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-aarch64-linux-deb10.tar.xz
+                dlHash: 0f60a0f5941ce2eae4ebe759344d3b1f664893de7e42527fad8b5017e887c035
+            Linux_Alpine:
+              unknown_versioning:
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-aarch64-linux-alpine.tar.xz
+                dlHash: 76b9d5d8909967995b8f361a8609998b19788e368cc7bb1ac3e4804dc0c5d05f
+            Darwin:
+              unknown_versioning:
+                dlUri: https://downloads.haskell.org/~ghcup/unofficial-bindists/cabal/3.18.1.0/cabal-install-3.18.1.0-aarch64-apple-darwin.tar.xz
+                dlHash: d80466ae78311b76b6678f7c1ee2509717139d43a22e544ec9b108b08db321d6
   GHCup:
     toolDetails:
       toolHomepage: "https://www.haskell.org/ghcup/"
