@@ -112,6 +112,7 @@ ghcupDownloads:
       toolLicense: "BSD-3"
     toolVersions:
       0.20.0.0:
+        viTags: []
         viArch:
           A_64:
             Linux_UnknownLinux:
