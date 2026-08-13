@@ -48,7 +48,7 @@ jobs:
             toolRequirements: build-essential curl libffi-dev  libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5 libnuma-dev
           - image: debian:13
             installCmd: apt-get update && apt-get install -y
-            toolRequirements: build-essential curl libffi-dev  libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5 libnuma-dev
+            toolRequirements: build-essential curl libffi-dev  libgmp-dev libgmp10 libncurses-dev libncurses6 libtinfo6 libnuma-dev
           - image: debian:unstable
             installCmd: apt-get update && apt-get install -y
             toolRequirements: build-essential curl libffi-dev  libgmp-dev libgmp10 libncurses-dev libncurses6 libtinfo6 libnuma-dev
